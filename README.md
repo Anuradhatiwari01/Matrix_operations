@@ -1,77 +1,51 @@
-# Matrix Operations Platform
+# Matrix Operations Web App
 
-A web-based application for performing matrix operations including addition, subtraction, and multiplication with dynamic matrix inputs.
+## What this project does
+This is a simple web application that allows users to perform basic
+matrix operations such as addition, subtraction, and multiplication.
 
-## Project Structure
+Users can create matrices of different sizes, enter values, and
+see the result directly on the screen.
 
-```
-Matrix_operations/
-├── index.html          # Main HTML file (clean structure, references external files)
-├── styles.css          # All CSS styles and responsive design
-├── script.js           # All JavaScript functionality and matrix operations
-├── README.md           # Project documentation
-└── index_backup.html   # Backup of original single-file version
-```
+## Why I built this
+While learning matrices in mathematics and programming, I wanted
+to understand how matrix operations work step by step.
 
-## Features
+This project helped me practice JavaScript logic and connect it
+with a simple web interface.
 
-- **Dynamic Matrix Input**: Create matrices of any size (1x1 to 10x10)
-- **Matrix Operations**: 
-  - Addition (A + B)
-  - Subtraction (A - B)
-  - Multiplication (A × B)
-- **Input Validation**: Real-time validation of numeric inputs
-- **Compatibility Checking**: Automatic verification of matrix dimension compatibility
-- **Responsive Design**: Works on desktop and mobile devices
-- **Modern UI**: Beautiful gradient-based design with smooth animations
+## Main features
+- Create matrices of different sizes
+- Perform matrix addition, subtraction, and multiplication
+- Checks whether matrix sizes are valid for an operation
+- Shows results in a clear table format
+- Simple and responsive user interface
 
-## File Descriptions
+## How the system works
+The user selects the size of two matrices and enters their values.
+JavaScript reads the inputs, performs the selected matrix operation,
+and displays the result below the input matrices.
 
-### `index.html`
-- Clean HTML structure with semantic markup
-- References external CSS and JavaScript files
-- Contains all the UI elements and form controls
+## Tech used
+- HTML
+- CSS
+- JavaScript
 
-### `styles.css`
-- Complete styling for the application
-- Responsive design with mobile-first approach
-- Modern gradient-based color scheme
-- Smooth animations and transitions
-- Error and success state styling
+## Project structure
+- `index.html` – Page structure
+- `styles.css` – Styling and layout
+- `script.js` – Matrix logic and calculations
 
-### `script.js`
-- `MatrixOperations` class containing all matrix logic
-- Dynamic matrix generation and input handling
-- Matrix arithmetic operations (add, subtract, multiply)
-- Input validation and error handling
-- Result display and user feedback
+## How to run
+Open `index.html` in any modern web browser.
 
-## How to Run
+## What I learned
+- How matrix operations work programmatically
+- How to take dynamic input from users
+- How to separate HTML, CSS, and JavaScript
+- Writing clear logic in JavaScript
 
-1. Open `index.html` in a web browser, or
-2. Start a local HTTP server:
-   ```bash
-   python -m http.server 8000
-   ```
-   Then navigate to `http://localhost:8000`
-
-## Usage
-
-1. **Set Matrix Dimensions**: Use the input controls to set the rows and columns for Matrix A and Matrix B
-2. **Generate Matrices**: Click "Generate Matrices" to create input tables
-3. **Enter Values**: Fill in the matrix values in the generated input fields
-4. **Perform Operations**: Click the operation buttons to calculate results
-5. **View Results**: Results are displayed in a formatted matrix below
-
-## Browser Compatibility
-
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile browsers with responsive design support
-
-## Development Notes
-
-This project has been restructured from a single HTML file into a modular structure with separate files for HTML, CSS, and JavaScript, improving:
-- Code organization and maintainability
-- Separation of concerns
-- Reusability of components
-- Development workflow
+## Future improvements
+- Add more matrix operations
+- Improve input handling
+- Add step-by-step calculation view
